@@ -1,0 +1,79 @@
+
+.board {
+	width: 100%;
+	max-width:450px;
+}
+table {
+	border: 1px black solid;
+	border-collapse: collapse;
+	width:100%;
+}
+
+td {
+	border: 1px black solid;
+	width: 11.11%;
+	padding-bottom: 11.11%;
+	overflow: hidden;
+	text-align: center;
+}
+
+td div {
+	position:absolute;
+	width:11.11%;
+	height:11.11%;
+	max-width:50px;
+	text-align:center;
+	font-size:8vw;
+	cursor:default;
+	background-color: rgba(255,255,255,0);
+}
+
+.keypad .btn {
+	min-width:40px;
+}
+
+.bottom-spacer-5 {
+	margin-bottom: 5px;
+}
+
+    @media (min-width: 450px) {
+	    td div{
+		    font-size: 35px;
+	    }
+    }
+
+    tr:nth-child(1) td {
+	    border-top: 3px black solid;
+    }
+
+    tr:nth-child(3n) td {
+	    border-bottom: 3px black solid;
+    }
+
+    td:nth-child(1) {
+	    border-left: 3px black solid;
+    }
+
+    td:nth-child(3n) {
+	    border-right: 3px black solid;
+    }
+
+    td:hover
+	    {
+		    background-color:#eeeeee;
+	    }
+
+	    td.error
+	    {
+		    color:#ff0000;
+	    }
+
+	    td.hint
+	    {
+		    background-color:#dddddd;
+	    }
+
+	    td.selected
+	    {
+		    background-color:#f09422;
+	    }
