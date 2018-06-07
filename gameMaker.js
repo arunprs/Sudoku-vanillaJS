@@ -1,8 +1,4 @@
 
-//this is copied code, I took a lot of stuff from so many places... Sigh! 
-//I am still a rookie, I could do a lot of bug fixes and understood that logic 
-// I really wish I could do this stuff more.
-
 let timeElapsed;
 	var timeDiff  =  {
 	start:function (){
